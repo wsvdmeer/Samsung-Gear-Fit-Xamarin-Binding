@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="GearFitApp.GearFitApp">
+	<uses-sdk android:minSdkVersion="17" />
+  <uses-permission android:name="com.samsung.android.sdk.permission.SAMSUNG_CUP_SERVICE"/>
+￼￼<uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+  <meta-data android:name="SAMSUNG_CUP_APP" android:value="APP_NAME;icon_name;true" />
+￼￼￼
+
+
+	<!--application 
+    android:label="GearFitApp"
+    android:allowBackup="true">
+	</application-->
+
+
+  <application
+android:allowBackup="true" 
+android:label="GearFitApp" >
+<activity android:name="MainActivity"
+android:label="GearFitApp" > 
+<intent-filter>
+<action android:name="com.samsung.android.sdk.cup" /> </intent-filter>
+</activity>
+<meta-data android:name="SAMSUNG_CUP_APP" android:value="HELLOCUP;ic_launcher;true" />
+</application>
+  
+
+
+</manifest>
